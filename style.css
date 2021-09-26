@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #000;
+  max-width: 100%;
+  text-align: center;
+}
+.header {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* wave */
+.ocean {
+  transform-style: preserve-3d;
+}
+.ocean .text {
+  display: block;
+  position: absolute;
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 8rem;
+  transform-style: preserve-3d;
+  /* tuhain elementiin caiwar ceguudiig todruulj ogdog. */
+  mix-blend-mode: screen;
+}
+.ocean .text:first-child {
+  clip-path: polygon(-30% 0, -20% 0, 20% 100%, 0 100%);
+  animation: wave 2s -10s ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(2) {
+  clip-path: polygon(-25% 0, -15% 0, 25% 100%, 5% 100%);
+  animation: wave 2s -9.8s ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(3) {
+  clip-path: polygon(-20% 0, -10% 0, 30% 100%, 10% 100%);
+  animation: wave 2000ms -9600ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(4) {
+  clip-path: polygon(-15% 0, -5% 0, 35% 100%, 15% 100%);
+  animation: wave 2000ms -9400ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(5) {
+  clip-path: polygon(-10% 0, 0% 0, 40% 100%, 20% 100%);
+  animation: wave 2000ms -9200ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(6) {
+  clip-path: polygon(-5% 0, 5% 0, 45% 100%, 25% 100%);
+  animation: wave 2000ms -9000ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(7) {
+  clip-path: polygon(0% 0, 10% 0, 50% 100%, 30% 100%);
+  animation: wave 2000ms -8800ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(8) {
+  clip-path: polygon(5% 0, 15% 0, 55% 100%, 35% 100%);
+  animation: wave 2000ms -8600ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(9) {
+  clip-path: polygon(10% 0, 20% 0, 60% 100%, 40% 100%);
+  animation: wave 2000ms -8400ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(10) {
+  clip-path: polygon(15% 0, 25% 0, 65% 100%, 45% 100%);
+  animation: wave 2000ms -8200ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(11) {
+  clip-path: polygon(20% 0, 30% 0, 70% 100%, 50% 100%);
+  animation: wave 2000ms -8000ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(12) {
+  clip-path: polygon(25% 0, 35% 0, 75% 100%, 55% 100%);
+  animation: wave 2000ms -7800ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(13) {
+  clip-path: polygon(30% 0, 40% 0, 80% 100%, 60% 100%);
+  animation: wave 2000ms -7600ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(14) {
+  clip-path: polygon(35% 0, 45% 0, 85% 100%, 65% 100%);
+  animation: wave 2000ms -7400ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(15) {
+  clip-path: polygon(40% 0, 50% 0, 90% 100%, 70% 100%);
+  animation: wave 2000ms -7200ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(16) {
+  clip-path: polygon(45% 0, 55% 0, 95% 100%, 75% 100%);
+  animation: wave 2000ms -7000ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(17) {
+  clip-path: polygon(50% 0, 60% 0, 100% 100%, 80% 100%);
+  animation: wave 2000ms -6800ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(18) {
+  clip-path: polygon(55% 0, 65% 0, 105% 100%, 85% 100%);
+  animation: wave 2000ms -6600ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(19) {
+  clip-path: polygon(60% 0, 70% 0, 110% 100%, 90% 100%);
+  animation: wave 2000ms -6400ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(20) {
+  clip-path: polygon(65% 0, 75% 0, 115% 100%, 95% 100%);
+  animation: wave 2000ms -6200ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(21) {
+  clip-path: polygon(70% 0, 80% 0, 120% 100%, 100% 100%);
+  animation: wave 2000ms -6000ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(22) {
+  clip-path: polygon(75% 0, 85% 0, 125% 100%, 105% 100%);
+  animation: wave 2000ms -5800ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(23) {
+  clip-path: polygon(80% 0, 90% 0, 130% 100%, 110% 100%);
+  animation: wave 2000ms -5600ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(24) {
+  clip-path: polygon(85% 0, 95% 0, 135% 100%, 115% 100%);
+  animation: wave 2000ms -5400ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(25) {
+  clip-path: polygon(90% 0, 100% 0, 140% 100%, 120% 100%);
+  animation: wave 2000ms -5200ms ease-in-out infinite alternate;
+}
+.ocean .text:nth-child(26) {
+  clip-path: polygon(95% 0, 105% 0, 145% 100%, 125% 100%);
+  animation: wave 2000ms -5000ms ease-in-out infinite alternate;
+}
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9) rotateX(20deg) rotateY(20deg)
+      rotateZ(0deg);
+    color: rgba(0, 30, 100%, 1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.1) rotateX(0deg) rotateY(0deg)
+      rotateZ(0deg);
+    color: rgba(50, 230, 255, 1);
+  }
+}
+/* glowing particles */
+.particles {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.glowing {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin: -150px;
+  transform-origin: right;
+  animation: colorChange 15s linear infinite;
+}
+.glowing:nth-child(even) {
+  transform-origin: left;
+}
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.glowing span {
+  position: absolute;
+  top: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+}
+.glowing span:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #f00;
+  border-radius: 50%;
+}
+.glowing span:nth-child(3n + 1):before {
+  background: rgba(134, 255, 0, 1);
+  box-shadow: 0 0 20px rgba(134, 255, 0, 1), 0 0 40px rgba(134, 255, 0, 1),
+    0 0 60px rgba(134, 255, 0, 1), 0 0 80px rgba(134, 255, 0, 1),
+    0 0 0 8px rgba(134, 255, 0, 0.1);
+}
+.glowing span:nth-child(3n + 2):before {
+  background: rgba(255, 214, 0, 1);
+  box-shadow: 0 0 20px rgba(255, 214, 0, 1), 0 0 40px rgba(255, 214, 0, 1),
+    0 0 60px rgba(255, 214, 0, 1), 0 0 80px rgba(255, 214, 0, 1),
+    0 0 0 8px rgba(255, 214, 0, 0.1);
+}
+.glowing span:nth-child(3n + 3):before {
+  background: rgba(0, 226, 255, 1);
+  box-shadow: 0 0 20px rgba(0, 226, 255, 1), 0 0 40px rgba(0, 226, 255, 1),
+    0 0 60px rgba(0, 226, 255, 1), 0 0 80px rgba(0, 226, 255, 1),
+    0 0 0 8px rgba(0, 226, 255, 0.1);
+}
+.glowing span:nth-child(3n + 1) {
+  animation: animate 30s alternate infinite;
+}
+.glowing span:nth-child(3n + 2) {
+  animation: animate-reverse 20s alternate infinite;
+}
+.glowing span:nth-child(3n + 3) {
+  animation: animate-reverse 20s alternate infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* main */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.glowing-particles {
+  overflow: hidden;
+}
+.container .box {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+.container .box:before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+.container .box::after {
+  content: "";
+  position: absolute;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+  transition: 0.5s;
+}
+.container .box:hover:before,
+.container .box:hover:after {
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+}
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
+}
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after {
+  background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after {
+  background: linear-gradient(315deg, #4dff03, #ff0058);
+}
+.container .box span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  pointer-events: none;
+}
+.container .box span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: move 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.container .box:hover span::before {
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.container .box span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: move 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  animation-delay: -1s;
+}
+.container .box:hover span::after {
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.container .box .content {
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  transition: 0.5s;
+  color: #fff;
+}
+.container .box:hover .content {
+  left: -25px;
+  padding: 60px 40px;
+}
+.container .box .content h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.container .box .content p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.4rem;
+}
+/* contact */
+.get_in_touch {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+h2 {
+  position: relative;
+  display: block;
+  font-size: 2em;
+  letter-spacing: 5px;
+  color: #0e3742;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  line-height: 0.7em;
+  outline: none;
+  animation: lighten 5s linear infinite;
+  /* z-index: 5; */
+}
+@keyframes lighten {
+  0%,
+  18%,
+  20%,
+  50%,
+  60%,
+  65%,
+  80%,
+  90%,
+  92% {
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18%,
+  20%,
+  30%,
+  50%,
+  60%,
+  65%,
+  80%,
+  90%,
+  92%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 800px #03bcf4, 0 0 160px;
+  }
+}
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 8px 16px;
+  border-width: 0 0 2px 0;
+  border-color: #03bcf4;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+  transform: translateY(-25px);
+  color: #fff;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #0a262e;
+  cursor: text;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  display: inline-block;
+  background-image: linear-gradient(125deg, #fffbd5, #03bcf4);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
+
+@media (min-width: 350px) {
+  .ocean .text {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 500px) {
+  .ocean .text {
+    font-size: 11rem;
+    line-height: 11rem;
+  }
+}
+@media (min-width: 768px) {
+  .ocean .text {
+    font-size: 15rem;
+    line-height: 15rem;
+  }
+}
